@@ -1,5 +1,9 @@
 # Razzle x After.js
 
+Baked inside is Redux with Styled-Components. Rebass is also included in the project.
+
+Feature based folder structure based off of teachings from Max Stoiber and Mark Erikson.
+
 ## How to use
 
 Download the example [or clone the whole project](https://github.com/jaredpalmer/razzle.git):
