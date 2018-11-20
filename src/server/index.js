@@ -3,7 +3,7 @@ import React from 'react';
 import express from 'express';
 import { render } from '@jaredpalmer/after';
 import { renderToString } from 'react-dom/server';
-import App from '../common/containers/App';
+import Home from '../common/views/pages/home/Home';
 import routes from '../common/routes';
 import MyDocument from './Document';
 import { Provider } from 'react-redux';
@@ -34,9 +34,9 @@ server
 
 
     const customRenderer = node => {
-      const App = <Provider store={store}>{node}</Provider>;
+      const Home = <Provider store={store}>{node}</Provider>;
       return {
-        html: renderToString(App),
+        html: renderToString(Home),
         // Anything else you add here will be made available
         // within document's this.props
         // e.g a redux store...

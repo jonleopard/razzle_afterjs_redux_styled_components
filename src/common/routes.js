@@ -7,7 +7,7 @@ export default [
     path: '/',
     exact: true,
     component: asyncComponent({
-      loader: () => import('./containers/App'), // required
+      loader: () => import('./views/pages/home/Home'), // required
       Placeholder: () => <div>...LOADING...</div>, // this is optional, just returns null by default
     }),
   },
@@ -15,7 +15,7 @@ export default [
     path: '/about',
     exact: true,
     component: asyncComponent({
-      loader: () => import('./About'), // required
+      loader: () => import('./views/pages/about'), // required
       Placeholder: () => <div>...LOADING...</div>, // this is optional, just returns null by default
     }),
   },
@@ -23,7 +23,7 @@ export default [
     path: '/counter',
     exact: true,
     component: asyncComponent({
-      loader: () => import('./containers/CounterPage'),
+      loader: () => import('./views/pages/counter'),
       Placeholder: () => <div>...LOADING COUNTER...</div>,
     })
   }
